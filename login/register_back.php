@@ -20,7 +20,7 @@ if(isset($_POST["register"])){
         
         if($password1 === $password2){
 
-            $password = hash("sha256", $password1);
+            $password = password_hash($password1, PASSWORD_BCRYPT);
             $insert = $db->insert("INSERT INTO `user`(`id`, `name`, `password`, `email`) VALUES (NULL,'$username','$password','$email')");
 
             $ids = $db->select_fetch("SELECT `id` FROM `user` WHERE `name`='$username'");

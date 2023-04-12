@@ -9,7 +9,7 @@
 
         $username = $_POST["username"];
         $password = $_POST["password"];
-        $hash = hash("sha256",$password);
+        
 
         $user_select = $db->select("SELECT * FROM `user` WHERE `name`='$username'");
         $password_select = $db->select_fetch("SELECT * FROM `user` WHERE `name`='$username'");
@@ -18,7 +18,7 @@
             $pswrd = $pass["password"];
         }
         if($user_select->num_rows > 0){
-            if($hash == $pswrd){
+            if(password_verify($password, $pswrd)){
 
                 $ids = $db->select_fetch("SELECT `id` FROM `user` WHERE `name`='$username'");
                 foreach($ids as $id){
@@ -29,11 +29,11 @@
                 
             }
             else{
-                header("location: index.php?error=Username or password are wrong");
+                header("location: index.php?error=Wrong password");
             }
         }
         else{
-            header("location: index.php?error=Username or password are wrong");
+            header("location: index.php?error=Wrong username");
         }
     }
 ?>
