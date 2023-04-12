@@ -1,9 +1,24 @@
-.loginForm {
+html, body {
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    background-color:slategray;
+    color: black;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .loginForm {
+    background-color: white;
     display: flex;
     flex-flow: column;
     max-width: 250px;
     row-gap: 10px;
-    & a {
-        color: azure;
-    }
-}
+    align-items: center;
+  }
+  .loginForm a {
+    color: black;
+    text-decoration: none;
+  }
