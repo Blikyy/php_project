@@ -12,7 +12,7 @@ include_once("login_back.php");
     <title>Login</title>
 </head>
 <body>
-    <form method="post" action="login_back.php">
+    <form class="loginForm" method="post" action="login_back.php">
         <?php if(isset($_GET['error'])) { ?>
                     <p class="error"><?php echo $_GET['error']; ?></p>
                 <?php } ?>

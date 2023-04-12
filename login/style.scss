@@ -1,0 +1,9 @@
+.loginForm {
+    display: flex;
+    flex-flow: column;
+    max-width: 250px;
+    row-gap: 10px;
+    & a {
+        color: azure;
+    }
+}

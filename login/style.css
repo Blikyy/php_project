@@ -1,0 +1,22 @@
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color:slategray;
+  color: white;
+}
+
+.loginForm {
+  background-color: white;
+  display: flex;
+  flex-flow: column;
+  max-width: 250px;
+  row-gap: 10px;
+  align-items: center;
+}
+.loginForm a {
+  color: black;
+  text-decoration: none;
+}
