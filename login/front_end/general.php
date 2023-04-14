@@ -8,7 +8,7 @@
 </head>
 <body>
     <br>
-    <form action="../back%end/send_manager.php" method="post">
+    <form action="../back_end/send_manager.php" method="post">
         <input type="text" name="u_post">
         <input type="hidden" name="page" value="general">
         <button type="submit" name="sub_message">OK</button>
