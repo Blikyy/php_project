@@ -16,5 +16,10 @@ require_once("back_main_page.php");
     <?php
     echo $name;
     ?>
+    <br>
+    <form action="back_main_page.php" method="post">
+        <input type="text" name="u_post">
+        <button type="submit" name="sub_message">OK</button>
+    </form>
 </body>
 </html>

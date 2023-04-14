@@ -1,6 +1,6 @@
 <?php
-
 session_start();
+include_once("MySQL_Driver.php");
 
 $id = $_SESSION["id"];
 
@@ -10,12 +10,15 @@ $data = json_decode($data, true);
 
 $name = $data["name"];
 
-$data["age"] = 18; 
+if(isset($_POST["sub_message"])){
+    $db = new MySQL();
+    $conn = $db->connect("localhost","root","","my_website");
+    $message = $_POST["u_post"];
+    $date = date('Y-m-d');
+    $id = $_SESSION["id"];
 
-$json = json_encode($data);
+    $db->insert("INSERT INTO `message`(`id`, `message`, `date`, `id_user`) VALUES (NULL,'$message','$date',(SELECT name FROM user WHERE id=$id))");
 
-file_put_contents("data/data_" . $id . ".json", $json);
-
-
-
+    header("location: main_page.php");
+}
 ?>
