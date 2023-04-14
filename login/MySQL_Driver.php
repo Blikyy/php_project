@@ -91,6 +91,11 @@ class MySQL{
         return $html;
 
     }
+    function send_message(){
+
+            return "hello";
+
+    }
 }
 
 
