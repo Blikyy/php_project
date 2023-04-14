@@ -1,5 +1,5 @@
 <?php
-include_once("login_back.php");
+include_once("back_end/login_back.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,14 +12,14 @@ include_once("login_back.php");
     <title>Login</title>
 </head>
 <body>
-    <form class="loginForm" method="post" action="login_back.php">
+    <form class="loginForm" method="post" action="back_end/login_back.php">
         <?php if(isset($_GET['error'])) { ?>
                     <p class="error"><?php echo $_GET['error']; ?></p>
                 <?php } ?>
         <input type="text" placeholder="Username" name="username">
         <input type="text" placeholder="Password" name="password">
         <input type="submit" name="ok">
-        <a href="register.php">Register</a>
+        <a href="front_end/register.php">Register</a>
     </form>
 </body>
 </html>

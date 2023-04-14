@@ -1,5 +1,5 @@
 <?php
-include_once("register_back.php");
+include_once("../back_end/register_back.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,7 +12,7 @@ include_once("register_back.php");
     <title>Register</title>
 </head>
 <body>
-    <form method="post" action="register_back.php">
+    <form method="post" action="../back_end/register_back.php">
     <?php if (isset($_GET['success'])) { ?>
                 <p class="success"><?php echo $_GET['success']; ?></p> 
         <?php } ?>
@@ -24,7 +24,7 @@ include_once("register_back.php");
         <input type="text" placeholder="Password again" name="password2">
         <input type="text" placeholder="email" name="email">
         <input type="submit" name="register">
-        <a href="index.php">back</a>
+        <a href="../index.php">back</a>
     </form>
 </body>
 </html>

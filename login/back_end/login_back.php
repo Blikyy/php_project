@@ -25,15 +25,15 @@
                     $id = $id["id"];
                 }
                 $_SESSION["id"] = $id;
-                header("location: main_page.php");
+                header("location: ../front_end/main_page.php");
                 
             }
             else{
-                header("location: index.php?error=Wrong password");
+                header("location: ../front_end/index.php?error=Wrong password");
             }
         }
         else{
-            header("location: index.php?error=Wrong username");
+            header("location: ../front_end/index.php?error=Wrong username");
         }
     }
 ?>

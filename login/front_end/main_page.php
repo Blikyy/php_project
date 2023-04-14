@@ -1,7 +1,5 @@
 <?php
-session_start();
-require_once("back_main_page.php");
-include_once("send_manager.php");
+require_once("../back_end/back_main_page.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,14 +17,10 @@ include_once("send_manager.php");
     echo $name;
     ?>
     <br>
-<<<<<<< HEAD
-    <form action="send_manager.php" method="post">
+
+    <form action="../back_end/send_manager.php" method="post">
         <input type="text" name="u_post">
         <input type="hidden" name="page" value="main_page">
-=======
-    <form action="back_main_page.php" method="post">
-        <input type="text" name="u_post">
->>>>>>> a78d0e19d058ed703bef4ac66cac7ffae62f46c3
         <button type="submit" name="sub_message">OK</button>
     </form>
 </body>
