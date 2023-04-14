@@ -11,16 +11,4 @@ $data = json_decode($data, true);
 $name = $data["name"];
 
 
-if(isset($_POST["sub_message"])){
-    $db = new MySQL();
-    $conn = $db->connect("localhost","root","","my_website");
-    $message = $_POST["u_post"];
-    $date = date('Y-m-d');
-    $id = $_SESSION["id"];
-
-    $db->insert("INSERT INTO `message`(`id`, `message`, `date`, `id_user`) VALUES (NULL,'$message','$date',(SELECT name FROM user WHERE id=$id))");
-
-
-    header("location: ../front_end/main_page.php");
-}
 ?>
