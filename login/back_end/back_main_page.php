@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once("MySQL_Driver.php");
+require_once("MySQL_Driver.php");
 
 $id = $_SESSION["id"];
 
@@ -20,9 +20,7 @@ if(isset($_POST["login"])){
     header("location: ../front_end/login.php");
 }
 
-$data = json_decode($data, true);
 
-$name = $data["name"];
 
 
 

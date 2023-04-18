@@ -15,7 +15,6 @@
         $db = new MySQL();
         $conn = $db->connect("localhost","root","","my_website");
         $status = $db->status_check($id);
-
         if($status == "true"){
             echo '    <form action="../back_end/send_manager.php" method="post">
             <input type="text" name="u_post">
@@ -27,12 +26,6 @@
 
     ?>
 
-    <br>
-    <form action="../back_end/send_manager.php" method="post">
-        <input type="text" name="u_post">
-        <input type="hidden" name="page" value="general">
-        <button type="submit" name="sub_message">OK</button>
-    </form>
 
 </body>
 </html>
