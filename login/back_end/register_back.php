@@ -28,7 +28,8 @@ if(isset($_POST["register"])){
                 $id = $id["id"];
             }
             $data = array(
-                "name" => $username
+                "name" => $username,
+                "status" => "false"
             );
             $json = json_encode($data);
             file_put_contents("../data/data_".$id.".json", $json);

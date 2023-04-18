@@ -91,9 +91,23 @@ class MySQL{
         return $html;
 
     }
-    function send_message(){
+    function topic_select(string $topic){
+        $topic = $this->select("SELECT * FROM `message` WHERE `topic`='$topic';");
 
-            return "hello";
+        while ($row = mysqli_fetch_assoc($topic)) {
+            $rows[] = $row;
+        }
+        $message = $rows;
+        foreach($message as $val){
+            echo "<p> From: ". $val["author_name"] . "<br>" . $val["message"] . "<br>" . $val["date"] . "</p>" . "<br>";
+        }
+        
+    }
+    function status_check(int $id){
+
+        $data = file_get_contents("../data/data_" . $id . ".json");
+        $data = json_decode($data);
+        return $data->status;
 
     }
 }

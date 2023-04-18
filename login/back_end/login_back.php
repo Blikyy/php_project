@@ -24,16 +24,22 @@
                 foreach($ids as $id){
                     $id = $id["id"];
                 }
+                
                 $_SESSION["id"] = $id;
-                header("location: ../front_end/main_page.php");
+                $data = file_get_contents("../data/data_" . $id . ".json");
+                $data = json_decode($data);
+                $data->status = "true";
+                $data = json_encode($data);
+                file_put_contents("../data/data_" . $id . ".json", $data);
+                header("location: ../index.php");
                 
             }
             else{
-                header("location: ../front_end/index.php?error=Wrong password");
+                header("location: ../front_end/login.php?error=Wrong password");
             }
         }
         else{
-            header("location: ../front_end/index.php?error=Wrong username");
+            header("location: ../front_end/login.php?error=Wrong username");
         }
     }
 ?>
