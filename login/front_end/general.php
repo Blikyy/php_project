@@ -8,7 +8,6 @@
 </head>
 <body>
 
-
     <?php
         session_start();
         require_once("../back_end/MySQL_Driver.php");
@@ -27,5 +26,13 @@
         $message = $db->topic_select("general");
 
     ?>
+
+    <br>
+    <form action="../back_end/send_manager.php" method="post">
+        <input type="text" name="u_post">
+        <input type="hidden" name="page" value="general">
+        <button type="submit" name="sub_message">OK</button>
+    </form>
+
 </body>
 </html>

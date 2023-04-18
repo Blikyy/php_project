@@ -20,4 +20,10 @@ if(isset($_POST["login"])){
     header("location: ../front_end/login.php");
 }
 
+$data = json_decode($data, true);
+
+$name = $data["name"];
+
+
+
 ?>
