@@ -28,11 +28,11 @@ require_once("back_end/back_main_page.php");
     ?>
     <h1>Ahoj</h1>
 
-    <?php
-        if($status == "true"){
-            echo "<h1>" . $data->name . "</h1>";
-        }
-    ?>
+   <?php 
+    if($status == "true"){
+        echo "<h1>" . $data->name . "</h1>";
+    }
+   ?>
 
     <a href="front_end/general.php">General</a>
     <a href="front_end/leaks.php">Leaks</a>
