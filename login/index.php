@@ -14,25 +14,9 @@ require_once("back_end/back_main_page.php");
 <body>
 
     <?php 
-        if($status == "false"){
-            echo '<form action="back_end/back_main_page.php" method="post">
-            <button type="submit" name="login">Login</button>
-            </form>';
-        }
-        else{
-            echo '    <form action="back_end/back_main_page.php" method="post">
-            <button type="submit" name="logout">Logout</button>
-            </form><br>';
-        }
-        
+        echo $button        
     ?>
     <h1>Ahoj</h1>
-
-   <?php 
-    if($status == "true"){
-        echo "<h1>" . $data->name . "</h1>";
-    }
-   ?>
 
     <a href="front_end/general.php">General</a>
     <a href="front_end/leaks.php">Leaks</a>
