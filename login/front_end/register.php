@@ -1,5 +1,5 @@
 <?php
-include_once("register_back.php");
+include_once("../back_end/register_back.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -30,22 +30,19 @@ include_once("register_back.php");
     </header>
     <form class="loginForm" method="post" action="register_back.php">
         <h1>Register</h1>
-        <?php if (isset($_GET['success'])) { ?>
-            <p class="success">
-                <?php echo $_GET['success']; ?>
-            </p>
+        <form method="post" action="../back_end/register_back.php">
+    <?php if (isset($_GET['success'])) { ?>
+                <p class="success"><?php echo $_GET['success']; ?></p> 
         <?php } ?>
-        <?php if (isset($_GET['error'])) { ?>
-            <p class="error">
-                <?php echo $_GET['error']; ?>
-            </p>
-        <?php } ?>
+        <?php if(isset($_GET['error'])) { ?>
+                    <p class="error"><?php echo $_GET['error']; ?></p>
+                <?php } ?>
         <input class="formBox" type="text" placeholder="Email" name="email" required>
         <input class="formBox" type="text" placeholder="Username" name="username" required>
         <input class="formBox" type="text" placeholder="Password" name="password1" required>
         <input class="formBox" type="text" placeholder="Confirm Password" name="password2" required>
         <input class="formSubmit" type="submit" name="register">
-        <a href="index.php">Registered already?</a>
+        <a href="../index.php">Registered already?</a>
     </form>
 </body>
 

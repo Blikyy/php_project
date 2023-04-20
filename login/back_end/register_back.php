@@ -28,18 +28,19 @@ if(isset($_POST["register"])){
                 $id = $id["id"];
             }
             $data = array(
-                "name" => $username
+                "name" => $username,
+                "status" => "false"
             );
             $json = json_encode($data);
-            file_put_contents("data/data_".$id.".json", $json);
-            header("location: register.php?success=successfully registered");
+            file_put_contents("../data/data_".$id.".json", $json);
+            header("location: ../front_end/register.php?success=successfully registered");
         }
         else{
-            header("location: register.php?error=Password doent match the secound password");
+            header("location: ../front_end/register.php?error=Password doent match the secound password");
         }
     }
     else{
-        header("location: register.php?error=Username already used");
+        header("location: ../front_end/register.php?error=Username already used");
     }
 
 }
