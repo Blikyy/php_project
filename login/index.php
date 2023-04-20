@@ -3,6 +3,7 @@ include_once("login_back.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,16 +12,32 @@ include_once("login_back.php");
     <link rel="stylesheet" href="./style.css">
     <title>Login</title>
 </head>
+
 <body>
+    <header>
+        <div class="navName">
+            <p>Placeholder name</p>
+        </div>
+        <div class="navButtons">
+            <div class="navButton">
+                <img class="navLoginSVG" src="./image/login.svg" alt="" srcset="">
+                <a href="./index.php"><p>Login</p></a>
+            </div>
+            <div class="navButton"></div>
+        </div>
+    </header>
     <form class="loginForm" method="post" action="login_back.php">
-        <?php if(isset($_GET['error'])) { ?>
-                    <p class="error"><?php echo $_GET['error']; ?></p>
-                <?php } ?>
-        <input type="text" placeholder="Username" name="username">
-        <input type="text" placeholder="Password" name="password">
-        <input type="submit" name="ok">
-        <a href="register.php">Register</a>
+        <h1>Login</h1>
+        <?php if (isset($_GET['error'])) { ?>
+            <p class="error">
+                <?php echo $_GET['error']; ?>
+            </p>
+        <?php } ?>
+        <input class="formBox" type="text" placeholder="Username" name="username" required>
+        <input class="formBox" type="text" placeholder="Password" name="password" required>
+        <input class="formSubmit" type="submit" name="ok" value="Login">
+        <a href="register.php">Not yet registered yet?</a>
     </form>
 </body>
-</html>
 
+</html>
