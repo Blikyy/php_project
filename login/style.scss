@@ -1,24 +1,80 @@
-html, body {
-    padding: 0;
-    margin: 0;
-  }
-  
-  body {
-    background-color:slategray;
-    color: black;
-    width: 100vw;
-    height: 100vh;
-  }
-  
-  .loginForm {
-    background-color: white;
-    display: flex;
-    flex-flow: column;
-    max-width: 250px;
-    row-gap: 10px;
-    align-items: center;
-  }
-  .loginForm a {
-    color: black;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #1E1E1E;
+  color: white;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+
+  & a {
+    font-family: 'Roboto', sans-serif;
+    color: white;
     text-decoration: none;
   }
+}
+
+header {
+  width: 100vw;
+  background-color: black;
+
+  .navButton {
+    background-color: #474747;
+    display: flex;
+    flex-flow: row;
+
+    img {
+      width: 40px;
+      height: auto;
+    }
+  }
+
+  .navName {
+    p {
+      margin: 0;
+    }
+  }
+}
+
+.formSubmit {
+  box-sizing: border-box;
+  width: 86px;
+  height: 48px;
+  color: white;
+  background: #C12F67;
+  border: 1px solid #C12F67;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.loginForm {
+  display: flex;
+  flex-flow: column;
+  max-width: 250px;
+  row-gap: 20px;
+  align-items: center;
+}
+
+.formBox {
+  /* Frame */
+
+
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px 15px;
+  height: 48px;
+  background: #FFFFFF;
+  border: 1px solid #E2E1E5;
+  border-radius: 5px;
+}

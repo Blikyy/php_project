@@ -3,6 +3,7 @@ require_once("back_end/back_main_page.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +12,7 @@ require_once("back_end/back_main_page.php");
     <link rel="stylesheet" href="style.css">
     <title>Main Page</title>
 </head>
+
 <body>
 
     <?php 
