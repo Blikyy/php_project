@@ -33,14 +33,14 @@ if(isset($_POST["register"])){
             );
             $json = json_encode($data);
             file_put_contents("../data/data_".$id.".json", $json);
-            header("location: ../front_end/register.php?success=successfully registered");
+            header("location: ../front_end/register.php?success=Successfully Registered");
         }
         else{
-            header("location: ../front_end/register.php?error=Password doent match the secound password");
+            header("location: ../front_end/register.php?error=Password Doesn't Match Confirmation Password");
         }
     }
     else{
-        header("location: ../front_end/register.php?error=Username already used");
+        header("location: ../front_end/register.php?error=Username Already Used");
     }
 
 }

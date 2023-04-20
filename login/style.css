@@ -46,7 +46,11 @@ header .navName p {
   cursor: pointer;
 }
 
-.loginForm {
+.Form {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
   flex-flow: column;
   max-width: 250px;
@@ -54,16 +58,26 @@ header .navName p {
   align-items: center;
 }
 
+.message {
+  display: flex;
+  padding: 0px 10px;
+  border: 5px solid #C12F67;
+  border-radius: 5px;
+}
+
 .formBox {
-  /* Frame */
   box-sizing: border-box;
-  /* Auto layout */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 10px 15px;
   height: 48px;
-  background: #FFFFFF;
-  border: 1px solid #E2E1E5;
+  background: #121212;
+  border: 1px solid #3c3b3d;
   border-radius: 5px;
+  color: white;
+}
+
+.formBox:focus {
+  outline: 2px solid white;
 }
