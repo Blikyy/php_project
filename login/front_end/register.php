@@ -19,19 +19,22 @@ include_once("../back_end/register_back.php");
             <p>Placeholder name</p>
         </div>
         <div class="navButtons">
-            <div class="navButton">
-                <img class="navLoginSVG" src="../image/login.svg" alt="" srcset="">
-                <a href="../index.php">
+        <a href="../front_end/login.php">
+                <div class="navButton">
+                    <img class="navLoginSVG" src="../image/login.svg" alt="" srcset="">
                     <p>Login</p>
-                </a>
-            </div>
-            <div class="navButton"></div>
+                </div>
+            </a>
+            <a href="../front_end/register.php">
+                <div class="navButton">
+                    <img class="navLoginSVG" src="../image/register.svg" alt="" srcset="">
+                    <p>Register</p>
+                </div>
+            </a>
         </div>
     </header>
     <form class="Form" method="post" action="../back_end/register_back.php">
         <h1>Register</h1>
-
-
         <?php if (isset($_GET['success'])) { ?>
             <div class="message">
                 <p class="success">
@@ -57,7 +60,7 @@ include_once("../back_end/register_back.php");
         <input class="formBox" type="text" placeholder="Password" name="password1" required>
         <input class="formBox" type="text" placeholder="Confirm Password" name="password2" required>
         <input class="formSubmit" type="submit" name="register">
-        <a href="./login.php">Registered already?</a>
+        <a href="./login.php">Already have an account?</a>
     </form>
 </body>
 

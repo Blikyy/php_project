@@ -14,11 +14,18 @@ require_once("back_end/back_main_page.php");
 </head>
 
 <body>
+    <header>
+        <div class="navName">
+            <p>
+                Placeholder name
+            </p>
+        </div>
+        <?php
+        echo $button
+            ?>
+    </header>
 
-    <?php 
-        echo $button        
-    ?>
-    <h1>Ahoj</h1>
+    <h1>Placeholder Name</h1>
 
     <a href="front_end/general.php">General</a>
     <a href="front_end/leaks.php">Leaks</a>
@@ -26,4 +33,5 @@ require_once("back_end/back_main_page.php");
     <a href="front_end/support.php">Support</a>
     <a href="front_end/tools.php">Tools</a>
 </body>
+
 </html>

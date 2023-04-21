@@ -21,14 +21,37 @@ body a {
 header {
   width: 100vw;
   background-color: black;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-between;
 }
-header .navButton {
+header .navName {
+  margin-left: 5px;
+}
+header .navButtons {
+  padding: 5px 0 5px 0;
+  margin-right: 5px;
+  display: flex;
+  flex-flow: row;
+  gap: 20px;
+}
+header .navButtons .navButton {
+  border-radius: 10px;
   background-color: #474747;
   display: flex;
   flex-flow: row;
+  align-items: center;
 }
-header .navButton img {
-  width: 40px;
+header .navButtons .navButton p {
+  padding: 0 10px 0 10px;
+  margin: 0;
+}
+header .navButtons .navButton img {
+  padding: 6px;
+  background-color: black;
+  border-radius: 10px;
+  width: 30px;
   height: auto;
 }
 header .navName p {
@@ -56,6 +79,9 @@ header .navName p {
   max-width: 250px;
   row-gap: 20px;
   align-items: center;
+}
+.Form h1 {
+  margin: 0;
 }
 
 .message {

@@ -23,15 +23,36 @@ body {
 header {
   width: 100vw;
   background-color: black;
-
-  .navButton {
-    background-color: #474747;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-between;
+  .navName {
+    margin-left: 5px;
+  }
+  .navButtons {
+    padding: 5px 0 5px 0;
+    margin-right: 5px;
     display: flex;
     flex-flow: row;
-
-    img {
-      width: 40px;
-      height: auto;
+    gap: 20px;
+    .navButton {
+      border-radius: 10px;
+      background-color: #474747;
+      display: flex;
+      flex-flow: row;
+      align-items: center;
+      & p {
+        padding: 0 10px 0 10px;
+        margin: 0;
+      }
+      & img {
+        padding: 6px;
+        background-color: black;
+        border-radius: 10px;
+        width: 30px;
+        height: auto;
+      }
     }
   }
 
@@ -54,6 +75,9 @@ header {
 }
 
 .Form {
+  & h1 {
+    margin: 0;
+  }
   position: absolute;
   left: 50%;
   top: 50%;

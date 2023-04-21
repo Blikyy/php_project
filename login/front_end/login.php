@@ -16,16 +16,23 @@ include_once("../back_end/login_back.php");
 <body>
     <header>
         <div class="navName">
-            <p>Placeholder name</p>
+            <p>
+            Placeholder name
+            </p>
         </div>
         <div class="navButtons">
-            <div class="navButton">
-                <img class="navLoginSVG" src="../image/login.svg" alt="" srcset="">
-                <a href="../index.php">
+            <a href="../front_end/login.php">
+                <div class="navButton">
+                    <img class="navLoginSVG" src="../image/login.svg" alt="" srcset="">
                     <p>Login</p>
-                </a>
-            </div>
-            <div class="navButton"></div>
+                </div>
+            </a>
+            <a href="../front_end/register.php">
+                <div class="navButton">
+                    <img class="navLoginSVG" src="../image/register.svg" alt="" srcset="">
+                    <p>Register</p>
+                </div>
+            </a>
         </div>
     </header>
     <form class="Form" method="post" action="../back_end/login_back.php">
