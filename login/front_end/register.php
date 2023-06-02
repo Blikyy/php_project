@@ -16,7 +16,7 @@ include_once("../back_end/register_back.php");
 <body>
     <header>
         <div class="navName">
-            <p>Placeholder name</p>
+            <p>Nikri</p>
         </div>
         <div class="navButtons">
         <a href="../front_end/login.php">

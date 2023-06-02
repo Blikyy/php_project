@@ -17,7 +17,7 @@ include_once("../back_end/login_back.php");
     <header>
         <div class="navName">
             <p>
-            Placeholder name
+            Nikri
             </p>
         </div>
         <div class="navButtons">

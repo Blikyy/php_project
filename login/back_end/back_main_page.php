@@ -1,10 +1,26 @@
 <?php
 session_start();
+//Bozo
+/*require_once("../config.php");*/
+//Bozo
 require_once("MySQL_Driver.php");
-
-$button = '<form action="back_end/back_main_page.php" method="post">
-        <button type="submit" name="login">Login</button>
-        </form>';
+$button = '<div class="navButtons">
+<a href="./front_end/login.php">
+<div class="navButton">
+    <img class="navLoginSVG" src="./image/login.svg" alt="" srcset="">
+    <p>Login</p>
+</div>
+</a>
+<a href="./front_end/register.php">
+<div class="navButton">
+    <img class="navLoginSVG" src="./image/register.svg" alt="">
+    <p>Register</p>
+</div>
+</a>
+</div>';
+/*$button = '<form action="back_end/back_main_page.php" method="post">
+<button type="submit" name="login">Login</button>
+</form>';*/
 
 if (isset($_SESSION["id"])) {
     $id = $_SESSION["id"];
@@ -36,8 +52,8 @@ if (isset($_SESSION["id"])) {
           <button type="submit" name="logout">Logout</button>
           </form><br> <br>'*/
 
-          /*Source toho obrazku bude bouchat mimo index.php protoze vymrdane tecky. Je treba udelat root directory pathing jak rikal Razer*/
-          '<div class="navButtons">
+            /*Source toho obrazku bude bouchat mimo index.php protoze vymrdane tecky. Je treba udelat root directory pathing jak rikal Razer*/
+            '<div class="navButtons">
             <a href="">
             <div class="navButton">
                 <img class="navLoginSVG" src="./image/logout.svg" alt="">

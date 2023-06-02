@@ -17,7 +17,7 @@ require_once("back_end/back_main_page.php");
     <header>
         <div class="navName">
             <p>
-                Placeholder name
+                Nikri
             </p>
         </div>
         <?php
@@ -25,7 +25,7 @@ require_once("back_end/back_main_page.php");
             ?>
     </header>
 
-    <h1>Placeholder Name</h1>
+    <h1>Nikri</h1>
 
     <a href="front_end/general.php">General</a>
     <a href="front_end/leaks.php">Leaks</a>
