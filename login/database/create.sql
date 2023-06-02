@@ -32,8 +32,8 @@ CREATE TABLE IF NOT EXISTS `my_website`.`message` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `message` VARCHAR(255) NOT NULL,
   `date` DATE NOT NULL,
+  `id_user` VARCHAR(255) NOT NULL,
   `topic` VARCHAR(255) NOT NULL,
-  `author_name` VARCHAR(255) NOT NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 
