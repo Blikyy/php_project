@@ -1,5 +1,5 @@
 <?php
-require_once("back_end/back_main_page.php");
+require_once("./back_end/back_main_page.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
