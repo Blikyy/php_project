@@ -99,7 +99,7 @@ class MySQL{
         }
         $message = $rows;
         foreach($message as $val){
-            echo "<p> From: ". $val["author_name"] . "<br>" . $val["message"] . "<br>" . $val["date"] . "</p>" . "<br>";
+            echo '<div class="post"><p>From: '. $val["id_user"] . "</p>" . "<p>" . $val["message"] . "</p>" . "<p>" . $val["date"] . "</p>" . "</div>";
         }
         
     }

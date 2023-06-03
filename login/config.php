@@ -12,6 +12,6 @@
     <title>Document</title>
 </head>
 <body>
-    <img src="<?php echo $path ?>/image/login.svg" alt="">
+    <?php echo $path; ?>
 </body>
 </html>

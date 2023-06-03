@@ -8,8 +8,6 @@ body {
 body {
   background-color: #1E1E1E;
   color: white;
-  width: 100vw;
-  height: 100vh;
   font-family: "Roboto", sans-serif;
 }
 body a {
@@ -56,6 +54,70 @@ header .navButtons .navButton img {
 }
 header .navName p {
   margin: 0;
+}
+
+section {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.comment {
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.posts {
+  display: flex;
+  flex-flow: column-reverse;
+  gap: 20px;
+  width: 100%;
+}
+.posts .post {
+  display: flex;
+  flex-flow: row;
+  align-self: center;
+  gap: 40px;
+  padding: 0 10px 0 10px;
+  background-color: #3c3b3d;
+  border-radius: 10px;
+}
+.posts .post p {
+  overflow-wrap: break-word;
+  white-space: normal;
+  max-width: 127ch;
+}
+
+.index_links_wrapper {
+  padding: 3px;
+  background: rgb(63, 94, 251);
+  background: radial-gradient(circle, rgb(63, 94, 251) 0%, rgb(252, 70, 107) 100%);
+  border-radius: 10px;
+}
+.index_links_wrapper .index_links {
+  display: flex;
+  flex-flow: row;
+  gap: 40px;
+  background-color: #121212;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 40px;
+  border-radius: 10px;
+}
+.index_links_wrapper .index_links .index_link a {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+.index_links_wrapper .index_links .index_link img {
+  max-height: 50px;
 }
 
 .formSubmit {
@@ -106,4 +168,11 @@ header .navName p {
 
 .formBox:focus {
   outline: 2px solid white;
+}
+
+footer {
+  position: absolute;
+  margin-right: 16px;
+  bottom: 0;
+  right: 0;
 }

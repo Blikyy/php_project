@@ -1,4 +1,5 @@
 <?php
+require_once("../back_end/back_main_page.php");
 include_once("../back_end/register_back.php");
 ?>
 <!DOCTYPE html>
@@ -16,22 +17,13 @@ include_once("../back_end/register_back.php");
 <body>
     <header>
         <div class="navName">
-            <p>Nikri</p>
+            <p>
+                Nikri
+            </p>
         </div>
-        <div class="navButtons">
-        <a href="../front_end/login.php">
-                <div class="navButton">
-                    <img class="navLoginSVG" src="../image/login.svg" alt="" srcset="">
-                    <p>Login</p>
-                </div>
-            </a>
-            <a href="../front_end/register.php">
-                <div class="navButton">
-                    <img class="navLoginSVG" src="../image/register.svg" alt="" srcset="">
-                    <p>Register</p>
-                </div>
-            </a>
-        </div>
+        <?php
+        echo $button
+            ?>
     </header>
     <form class="Form" method="post" action="../back_end/register_back.php">
         <h1>Register</h1>
