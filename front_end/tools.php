@@ -42,8 +42,12 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/php_project" . "/back_end/back_main_p
             echo '<div class="comment"><form action="../back_end/send_manager.php" method="post">
             <input type="text" name="u_post">
             <input type="hidden" name="page" value="tools">
-            <button type="submit" name="sub_message">OK</button>
-            </form></div>';
+            <button type="submit" name="sub_message">
+                    <img src="/php_project/image/send.svg">
+                    </button>
+                </form>
+            </div>
+            ';
         }
     } ?>
     <div class="posts">

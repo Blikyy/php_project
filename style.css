@@ -176,6 +176,20 @@ section a {
   justify-content: center;
   margin-bottom: 20px;
 }
+.comment form {
+  display: flex;
+  flex-flow: row;
+  max-height: 40px;
+}
+.comment button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.comment button img {
+  max-height: 40px;
+}
 
 .posts {
   display: flex;
@@ -206,6 +220,8 @@ section a {
   border-radius: 10px;
 }
 .index_links_wrapper .index_links {
+  justify-content: center;
+  flex-wrap: nowrap;
   display: flex;
   flex-flow: row;
   gap: 40px;
@@ -281,4 +297,10 @@ footer {
   margin-right: 16px;
   bottom: 0;
   right: 0;
+}
+
+@media only screen and (max-width: 550px) {
+  .index_links {
+    flex-wrap: wrap !important;
+  }
 }
