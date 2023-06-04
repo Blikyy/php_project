@@ -1,4 +1,4 @@
-# Forum Project
+# Nikri (Forum Project)
 
 ![image](https://github.com/Blikyy/php_project/assets/76947058/b1f792e0-b43a-48ab-9ff3-204a07a31d14)
 
@@ -35,7 +35,7 @@ Here are some screenshots showcasing the different aspects of the forum:
 ## Requirements
 
 - PHP (version 8.2)
-- SASS
+- SASS (Only for further development)
 
 ## Installation and Setup
 
