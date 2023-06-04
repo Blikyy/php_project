@@ -35,7 +35,7 @@ Here are some screenshots showcasing the different aspects of the forum:
 ## Requirements
 
 - PHP (version 8.2)
-- SASS
+- SASS (Only for further development)
 
 ## Installation and Setup
 
