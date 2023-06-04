@@ -9,6 +9,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/php_project" . "/back_end/back_main_p
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
+    <meta name="description" content="Piracy chat category">
     <title>Piracy</title>
 </head>
 
@@ -42,10 +43,10 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/php_project" . "/back_end/back_main_p
             echo '
             <div class="comment">
                 <form action="../back_end/send_manager.php" method="post">
-                    <input type="text" name="u_post">
+                    <input type="text" name="u_post" placeholder="Message">
                     <input type="hidden" name="page" value="piracy">
                     <button type="submit" name="sub_message">
-                    <img src="/php_project/image/send.svg">
+                    <img src="/php_project/image/send.svg" alt="send svg image">
                     </button>
                 </form>
             </div>

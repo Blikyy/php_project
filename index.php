@@ -10,6 +10,7 @@ require_once("./back_end/back_main_page.php");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="discription" content="main page">
     <link rel="stylesheet" href="./style.css">
+    <meta name="description" content="Welcome to the Forum Project, a clean and engaging forum where users can discuss various topics across different categories, including leaks, support, general discussions, tools, and piracy. Join the conversation and connect with like-minded individuals.">
     <title>Main Page</title>
 </head>
 

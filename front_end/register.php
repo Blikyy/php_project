@@ -11,6 +11,7 @@ include_once("../back_end/register_back.php");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="discription" content="register page">
     <link rel="stylesheet" href="../style.css">
+    <meta name="description" content="Register page">
     <title>Register</title>
 </head>
 
