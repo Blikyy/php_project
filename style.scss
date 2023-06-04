@@ -1,4 +1,57 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 51%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #FC466B #FFFFFF;
+}
+
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+  width: 8px;
+}
+*::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: #FFFFFF;
+}
+
+*::-webkit-scrollbar-track:hover {
+  background-color: #FFFFFF;
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: #FFFFFF;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background-color: #FC466B;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #FC466B;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: #A02C43;
+}
+
+
 
 html,
 body {
@@ -18,24 +71,58 @@ body {
   }
 }
 
+.noLogin {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  p {
+    font-weight: 700;
+    letter-spacing: 6px;
+    margin-right: -6px;
+  }
+}
+
 header {
-  width: 100vw;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  width: 100%;
   background-color: black;
   display: flex;
   flex-flow: row;
   align-items: center;
   justify-content: space-between;
 
-  .navName {
-    margin-left: 5px;
-  }
-
   .navButtons {
-    padding: 5px 0 5px 0;
-    margin-right: 5px;
+    height: 42px;
+    margin-right: 16px;
     display: flex;
     flex-flow: row;
     gap: 20px;
+
+    button {
+      cursor: pointer;
+      padding: 0;
+      margin: 0;
+      border: none;
+      background-color: transparent;
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      font-size: 16px;
+
+      form {
+        box-sizing: border-box;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        border: none;
+        height: min-content;
+        margin: 0;
+        padding: 0;
+      }
+    }
 
     .navButton {
       border-radius: 10px;
@@ -60,13 +147,40 @@ header {
   }
 
   .navName {
+    margin-left: 16px;
+    padding: 10px 16px 10px 16px;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #fc466b, #3f5efb);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 7s ease infinite;
+    -moz-animation: AnimationName 7s ease infinite;
+    animation: AnimationName 7s ease infinite;
+
     p {
+      background-color: transparent;
       margin: 0;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 8px;
+      margin-right: -8px;
     }
   }
 }
 
 section {
+  h1 {
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 16px;
+    margin-right: -16px;
+  }
+
+  a {
+    display: flex;
+    gap: 10px;
+  }
+
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -87,12 +201,14 @@ section {
   flex-flow: column-reverse;
   gap: 20px;
   width: 100%;
+
   .post {
     p {
       overflow-wrap: break-word;
       white-space: normal;
       max-width: 127ch;
     }
+
     display: flex;
     flex-flow: row;
     align-self: center;
@@ -105,21 +221,28 @@ section {
 
 .index_links_wrapper {
   padding: 3px;
-  background: rgb(63, 94, 251);
-  background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+  background: linear-gradient(45deg, #fc466b, #3f5efb);
+  background-size: 400% 400%;
+
+  -webkit-animation: AnimationName 7s ease infinite;
+  -moz-animation: AnimationName 7s ease infinite;
+  animation: AnimationName 7s ease infinite;
   border-radius: 10px;
+
   .index_links {
     .index_link {
       a {
-      display: flex;
-      flex-flow: column;
-      align-items: center;
-      justify-content: center;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
       }
+
       img {
         max-height: 50px;
       }
     }
+
     display: flex;
     flex-flow: row;
     gap: 40px;

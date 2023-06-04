@@ -15,14 +15,16 @@ require_once("./back_end/back_main_page.php");
 
 <body>
     <header>
-        <div class="navName">
-            <p>
-                Nikri
-            </p>
-        </div>
+        <a href="/php_project/index.php">
+            <div class="navName">
+                <p>
+                    Nikri
+                </p>
+            </div>
+        </a>
         <?php
         echo $button
-        ?>
+            ?>
     </header>
     <section>
         <h1>Nikri</h1>

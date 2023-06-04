@@ -15,12 +15,14 @@ include_once("../back_end/login_back.php");
 </head>
 
 <body>
-<header>
-        <div class="navName">
-            <p>
-                Nikri
-            </p>
-        </div>
+    <header>
+        <a href="/php_project/index.php">
+            <div class="navName">
+                <p>
+                    Nikri
+                </p>
+            </div>
+        </a>
         <?php
         echo $button
             ?>
@@ -33,10 +35,13 @@ include_once("../back_end/login_back.php");
             </p>
         <?php } ?>
         <input class="formBox" type="text" placeholder="Username" name="username" required>
-        <input class="formBox" type="text" placeholder="Password" name="password" required>
+        <input class="formBox" type="password" placeholder="Password" name="password" required>
         <input class="formSubmit" type="submit" name="ok">
         <a href="../front_end/register.php">Not registered yet?</a>
     </form>
+    <footer>
+        <p>Made with ❤ by Kordy & Blikyy ©2023</p>
+    </footer>
 </body>
 
 </html>

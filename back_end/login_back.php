@@ -37,11 +37,11 @@
                 
             }
             else{
-                header("location: ../front_end/login.php?error=Wrong password");
+                header("location: ../front_end/login.php?error=Wrong credentials");
             }
         }
         else{
-            header("location: ../front_end/login.php?error=Wrong username");
+            header("location: ../front_end/login.php?error=Wrong credentials");
         }
     }
 ?>

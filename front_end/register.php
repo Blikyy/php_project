@@ -16,11 +16,13 @@ include_once("../back_end/register_back.php");
 
 <body>
     <header>
-        <div class="navName">
-            <p>
-                Nikri
-            </p>
-        </div>
+        <a href="/php_project/index.php">
+            <div class="navName">
+                <p>
+                    Nikri
+                </p>
+            </div>
+        </a>
         <?php
         echo $button
             ?>
@@ -47,13 +49,16 @@ include_once("../back_end/register_back.php");
         <?php } ?>
         </div>
 
-        <input class="formBox" type="text" placeholder="Email" name="email" required>
+        <input class="formBox" type="email" placeholder="Email" name="email" required>
         <input class="formBox" type="text" placeholder="Username" name="username" required>
-        <input class="formBox" type="text" placeholder="Password" name="password1" required>
-        <input class="formBox" type="text" placeholder="Confirm Password" name="password2" required>
+        <input class="formBox" type="password" placeholder="Password" name="password1" required>
+        <input class="formBox" type="password" placeholder="Confirm Password" name="password2" required>
         <input class="formSubmit" type="submit" name="register">
         <a href="./login.php">Already have an account?</a>
     </form>
+    <footer>
+        <p>Made with ❤ by Kordy & Blikyy ©2023</p>
+    </footer>
 </body>
 
 </html>
